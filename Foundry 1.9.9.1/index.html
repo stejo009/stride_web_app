@@ -1,9 +1,33 @@
-
+ 
 <!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Web Stride Studio</title>
+
+        <!-- bootstrap 4 cdn -->
+         <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+
+<!-- bottstrap 4 cdn end -->
+
+<!-- wow animation starts -->
+<link rel="stylesheet" type="text/css" href="animate.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="js/wow.min.js"></script>
+              
+              <!-- wow animation end -->
+
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
@@ -29,6 +53,52 @@
                     });
                 </script>
 
+                <!-- typing text effect -->
+
+<style type="text/css">
+
+
+#slider_title{ 
+  color: white; 
+  /*font-family: "Courier";*/
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 50em;
+  animation: type 4s steps(60, end); 
+}
+
+#slider_title:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
+
+</style>
+
+
+<!-- typing text effect end -->
+
     </head>
 
     <body class="scroll-assist">
@@ -45,36 +115,14 @@
 		        <ul class="slides">
 		            <li class="overlay image-bg">
 		                <div class="background-image-holder">
-		                    <img alt="image" class="background-image" src="img/122.jpg">
+		                    <img alt="image" class="background-image" src="img/ee.jpg">
 		                </div>
 		                <div class="container v-align-transform">
-		                    <div class="row text-center">
-		                        <div class="col-md-11 col-md-offset-1">
-		                            <!-- <h2 class="mb-xs-16">Stride Web Studio, one-stop solution for all your business requirements! We help know your audience, grow your business, and improve your brand value.
-</h2>
-		                            <p class="lead mb40"></p> -->
-                                <h2 class="mb-xs-16">Proficient Programming Solutions tailored to your needs. Your technology partner for progress!
-                                <!-- <p class="lead mb40">We help know your audience, grow your business, and improve your brand value.</p> -->
-                                <!-- <p class="lead mb40">We help know your audience, grow your business, and improve your brand value.</p> -->
-		                            <!-- <a class="btn btn-lg" href="#">Start Exploring</a>
-		                            <a class="btn btn-lg btn-filled" href="#">Purchase</a> -->
+		                    <div class="row text-left">
+		                        <div class="col-md-11 col-md-offset-1 typewriter">
+		                            
+                                <h2 class="mb-xs-16" id="slider_title">Proficient Programming Solutions tailored to your needs.</h2><h2 id="slider_title" style="padding-left: 20%"> Your technology partner for progress!</h2>
 		                        </div>
-		                    </div>
-
-		                </div>
-
-		            </li> <li class="overlay image-bg">
-		                <div class="background-image-holder">
-		                    <img alt="image" class="background-image" src="img/258.jpg">
-		                </div>
-		                <div class="container v-align-transform">
-		                    <div class="row text-center">
-		                        <div class="col-md-11 col-md-offset-1">
-                              <h2 class="mb-xs-16">
-                                Proficient Programming Solutions tailored to your needs. Your technology partner for progress!
-                              <!-- <p class="lead mb40">We help know your audience, grow your business, and improve your brand value.</p> -->
-                              <!-- <p class="lead mb40">We help know your audience, grow your business, and improve your brand value.</p> -->
-
 		                    </div>
 
 		                </div>
@@ -84,20 +132,14 @@
 		                    <img alt="image" class="background-image" src="img/122.jpg">
 		                </div>
 		                <div class="container v-align-transform">
-		                    <div class="row text-center">
+		                    <div class="row text-lef">
 		                        <div class="col-md-11 col-md-offset-1">
-		                            <!-- <h2 class="mb-xs-16">Digital Marketing, Web Presence, Audience Insight, Technology Solutions</h2>
-		                            <h6 class="lead mb40">Apply best suited Digital Marketing strategy and make your business internationally competent.</h6>
-		                            <a class="btn btn-lg" href="#">Start Exploring</a>
-		                            <a class="btn btn-lg btn-filled" href="#">Purchase</a> -->
-                                <h2 class="mb-xs-16">Proficient Programming Solutions tailored to your needs. Your technology partner for progress!
-                                <!-- <p class="lead mb40">We help know your audience, grow your business, and improve your brand value.</p> -->
-                                <!-- <p class="lead mb40">We help know your audience, grow your business, and improve your brand value.</p> -->
-		                        </div>
+                              <h2 class="mb-xs-16" id="slider_title">Proficient Programming Solutions tailored to your needs.</h2><h2 id="slider_title" style="padding-left: 20%"> Your technology partner for progress!</h2>
+
 		                    </div>
 
 		                </div>
-		            </li>
+
 		        </ul>
 		    </section>
 
@@ -109,6 +151,9 @@
           <!-- Basic Discription -->
             <div class="container">
 		            <div class="row">
+
+
+
 		                <div class="col-sm-10 col-sm-offset-1 text-center">
 		                    <h3 class="uppercase text-muted mb40 mb-xs-24">Web stride Studio<br></h3>
 		                    <p class="lead">
@@ -130,7 +175,7 @@
 <!-- Product container starts -->
 		        <div class="container text-center">
               <!-- First Product -->
-              <h3 class="uppercase text-muted mb10 mb-xs-24"> Our Products</h3>
+              <h3 class="uppercase text-muted mb10 mb-xs-24 wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.5s"> Our Products</h3>
               <p class="lead">
                 We offer a broad range of products and services that help our clients expand their business.
               </p> <br />
@@ -138,12 +183,12 @@
 		            <div class="row">
 		                <div class="col-sm-6 col-md-4">
 		                    <div class="image-tile outer-title text-center">
-		                        <img alt="Pic" src="img/first.jpeg" >
+		                        <img alt="Pic" src="img/first.jpeg" class="rounded">
 		                        <div class="title mb16">
 		                            <h5 class="mb0 uppercase">Digital Marketing</h5>
 		                            <span> </span>
 		                        </div>
-		                        <p class="mb0">Use our Digital Marketing skills and expand the horizon of your business! Digitalize your marketing stragey and reach out to every human hand.</p>
+		                        <hr><p class="mb0">Use our Digital Marketing skills and expand the horizon of your business! Digitalize your marketing stragey and reach out to every human hand.</p>
 		                    </div>
 		                </div>
                     <!-- First Project completed -->
@@ -151,12 +196,12 @@
                     <!-- Second Product -->
 		                <div class="col-md-4 col-sm-6">
 		                    <div class="image-tile outer-title text-center">
-		                        <img alt="Pic" src="img/second.jpeg">
+		                        <img alt="Pic" src="img/second.jpeg" class="rounded">
 		                        <div class="title mb16">
 		                            <h5 class="uppercase mb0">Web Presence</h5>
 		                            <span> </span>
 		                        </div>
-		                        <p class="mb0">Use our meticulously designed, helpful, stable web solutions to cater various needs of your clients.</p>
+		                        <hr><p class="mb0">Use our meticulously designed, helpful, stable web solutions to cater various needs of your clients.</p>
 		                    </div>
 		                </div>
                     <!-- Second Product completed -->
@@ -164,12 +209,12 @@
                     <!-- Third Products start-->
 		                <div class="col-md-4 col-sm-6">
 		                    <div class="image-tile outer-title text-center">
-		                        <img alt="Pic" src="img/third.jpeg">
+		                        <img alt="Pic" src="img/third.jpeg" class="rounded">
 		                        <div class="title mb16">
 		                            <h5 class="uppercase mb0">Audience Insight </h5>
 		                            <span> </span>
 		                        </div>
-		                        <p class="mb0">Identify the odd-man! Analyse your audience, learn more about its interests, and offer customer centric business using Stride Studio’s Audience Insights.</p>
+		                        <hr><p class="mb0">Identify the odd-man! Analyse your audience, learn more about its interests, and offer customer centric business using Stride Studio’s Audience Insights.</p>
 		                    </div>
 		                </div>
                     <!-- Third product end -->
@@ -182,7 +227,7 @@
         <!-- Body section end -->
 
 <!-- Form section Start -->
-        <section style="background-color:#e7e7e7">
+        <section style="background-color:#e7e7e7" class="wow pulse" data-wow-duration="1s" data-wow-delay="1s">
           <div class="container">
             <h3 class=" text-muted mb40 mb-xs-24 text-center"> Let's Get in touch</h3>
             <form>
@@ -194,6 +239,7 @@
             </form>
           </div>
         </section>
+        
 
 
 <!-- Footer loading Starts -->
@@ -210,5 +256,8 @@
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/scripts.js"></script>
+        <script>
+              new WOW().init();
+              </script>
     </body>
 </html>
